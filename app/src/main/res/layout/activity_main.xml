@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="#fff"
+            android:background="@color/colorBottomBg"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            />
+    <FrameLayout
+            android:layout_weight="1"
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+    <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bnv_menu"
+            android:background="@color/colorBottomBg"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            app:itemTextColor="@color/bottom_item_text_color"
+            app:itemIconTint="@color/bottom_item_text_color"
+            app:menu="@menu/menu_bottom_navigation_items"
+            />
+</LinearLayout>

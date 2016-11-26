@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/girls"
+            android:icon="@drawable/ic_pregnant_woman_red_50_24dp"
+            android:checked="true"
+            android:title="美女"/>
+    <item android:id="@+id/joke"
+            android:icon="@drawable/ic_insert_emoticon_white_24dp"
+            android:checked="false"
+            android:title="搞笑"/>
+    <item android:id="@+id/wechat"
+            android:icon="@drawable/ic_chat_red_50_24dp"
+            android:checked="false"
+            android:title="精选"/>
+    <item android:id="@+id/weather"
+            android:icon="@drawable/ic_wb_cloudy_red_50_24dp"
+            android:checked="false"
+            android:title="天气"/>
+
+</menu>

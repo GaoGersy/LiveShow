@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <!--<android.support.design.widget.CoordinatorLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fitsSystemWindows="true">-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:id="@+id/appBarLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+                <!--android:id="@+id/collapse_toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fitsSystemWindows="true"-->
+                <!--app:contentScrim="?attr/colorPrimary"-->
+                <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+            <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:src="@mipmap/ic_launcher"-->
+                    <!--/>-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                    <!--android:id="@+id/toolbar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="top"-->
+                    <!--android:minHeight="?attr/actionBarSize"-->
+                    <!--app:layout_collapseMode="pin"-->
+                    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+                    <!--app:titleMarginTop="15dp" />-->
+
+            <!--<android.support.design.widget.TabLayout-->
+                    <!--android:id="@+id/tab_layout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:background="@color/white"-->
+                    <!--app:tabIndicatorColor="@color/colorPrimary"-->
+                    <!--app:tabSelectedTextColor="@color/colorPrimaryDark"-->
+                    <!--app:tabTextColor="@color/colorPrimary" />-->
+
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/viewpagertab"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:stl_indicatorAlwaysInCenter="false"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_indicatorInFront="false"
+
+            app:stl_indicatorWidth="auto"
+
+            app:stl_overlineColor="#4D000000"
+            app:stl_overlineThickness="0dp"
+
+            app:stl_underlineThickness="1dp"
+            app:stl_dividerColor="#4D000000"
+
+            app:stl_defaultTabBackground="?attr/selectableItemBackground"
+            app:stl_defaultTabTextAllCaps="true"
+            app:stl_defaultTabTextColor="#fff"
+            app:stl_defaultTabTextSize="12sp"
+            app:stl_defaultTabTextHorizontalPadding="16dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+
+            app:stl_clickable="true"
+            app:stl_titleOffset="24dp"
+            app:stl_drawDecorationAfterTab="false"
+
+            app:stl_distributeEvenly="true"
+            app:stl_dividerThickness="0dp"
+            app:stl_underlineColor="#06ed63"
+
+            app:stl_customTabTextLayoutId="@layout/custom_tab"
+            app:stl_customTabTextViewId="@id/tab_text"
+
+            app:stl_indicatorColor="#24CF5F"
+            app:stl_indicatorCornerRadius="18dp"
+            app:stl_indicatorGravity="center"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="36dp"
+
+            />
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vp_joke"
+            android:layout_below="@id/viewpagertab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+</LinearLayout>

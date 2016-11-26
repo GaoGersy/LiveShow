@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.gersion.jokeshow"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    testCompile 'junit:junit:4.12'
+
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //okhttp
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+
+    //dagger2
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'com.google.dagger:dagger:2.5'
+    apt 'com.google.dagger:dagger-compiler:2.5'
+    compile 'org.kie.modules:com-google-code-gson:6.5.0.Final'
+
+    //Rxjava
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+
+    //logger
+    compile 'com.orhanobut:logger:1.15'
+
+    //smarttablayout
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+
+    //fresco
+    compile 'com.facebook.fresco:fresco:0.14.1'
+
+    // 支持 GIF 动图，需要添加
+    compile 'com.facebook.fresco:animated-gif:0.14.1'
+
+//    //xrecyclerview
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+
+
+}
