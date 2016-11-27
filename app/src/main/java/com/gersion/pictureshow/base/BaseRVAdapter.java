@@ -77,6 +77,8 @@ public abstract class BaseRVAdapter<T> extends RecyclerView.Adapter implements O
 
     @Override
     public void onItemClick(View view, int position) {
-        mListener.onItemClick(view,position);
+        if (mListener!=null) {
+            mListener.onItemClick(view, position);
+        }
     }
 }
