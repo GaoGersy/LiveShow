@@ -12,9 +12,9 @@ package com.gersion.pictureshow.constants;
  * @更新版本 $
  */
 public interface Constants {
-    String APPKEY_JOKE = "979cf884ef1ecf74d403efb15dc76bfd";
-    String APPKEY_WEIXIN = "de2748b6656e28aa6d5e9b36bc63a225";
-    String APPKEY_WEATHER = "16ad86a273c2a15e4152c8b840cd14ce";
+    String APPKEY_JOKE = "笑话大全APPKEY";
+    String APPKEY_WEIXIN = "微信精选APPKEY";
+    String APPKEY_WEATHER = "天气APPKEY";
 
     //笑话
     String BASE_URL_JOKE = "http://japi.juhe.cn/joke/content/text.from";
