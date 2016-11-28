@@ -17,3 +17,9 @@ TODO:做了四天了，目前完成的模块有：搞笑图片，笑话大全，
 	    等待完成的模块：美女图片，天气，沉浸式状态栏
 效果图：
 
+
+
+[![Hex.pm](https://github.com/GaoGersy/LiveShow/blob/master/image/GIF.gif)]()
+
+
+
