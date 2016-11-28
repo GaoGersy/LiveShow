@@ -16,4 +16,4 @@ TODO:做了四天了，目前完成的模块有：搞笑图片，笑话大全，
 效果图：
 
 
- ![GIF](https://github.com/GaoGersy/LiveShow/blob/master/image/GIF.gif)
+![GIF](https://github.com/GaoGersy/LiveShow/blob/master/image/GIF.gif)
